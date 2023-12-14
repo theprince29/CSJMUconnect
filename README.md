@@ -36,9 +36,6 @@ Participate in forum discussions on various academic topics and seek help from p
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-Mention any third-party assets, libraries, or resources you've used in this project.
 
 ## Contact
 
