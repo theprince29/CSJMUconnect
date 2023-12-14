@@ -2,47 +2,35 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Overview
+# College Forum Website
 
-Briefly describe your project here. Explain what the Helpdesk is about, its purpose, and the problems it solves.
+The College Forum Website is a platform designed to enhance communication and collaboration among college students. It serves as a virtual hub for students to access academic resources, connect with peers, and engage in discussions online.
 
 ## Features
 
-List the key features of the Helpdesk application or what users can do with it.
+### 1. Class Notes
+Browse and download class notes for various subjects and courses.
 
-- Feature 1
-- Feature 2
-- ...
+### 2. Previous Year Question Papers (PYQs)
+Access and download previous year question papers for exam preparation.
 
-## Document Details
+### 3. Student Collaboration
+Connect with classmates, form study groups, and collaborate on projects.
 
-- **Subject:** [Subject Name]
-- **Code:** [Course Code]
-- **Semester:** [Semester Information]
-- **Teacher:** [Teacher's Name]
-- **Description:** Include a brief description or abstract of the document here.
+### 4. Online Discussions
+Participate in forum discussions on various academic topics and seek help from peers.
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- Bootstrap
-- JavaScript
-- SimpleLightbox
-- Google Fonts
-- ...
+- Frontend: HTML, CSS, JavaScript , bootstrap and tailwind css
+- Backend: Express.js , Node.js server language used
+- Database: SQL Database for storing Contributers Details
 
 ## Installation
 
-Provide instructions on how to install or run the application locally.
-
-## Usage
-
-Explain how to use the application. Provide code snippets or examples if applicable.
-
-## Contributing
-
-Explain how others can contribute to the project, whether it's through bug reporting, feature suggestions, or code contributions.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/college-forum-website.git
 
 ## License
 
@@ -54,35 +42,32 @@ Mention any third-party assets, libraries, or resources you've used in this proj
 
 ## Contact
 
-Provide your contact information (email, social media links) for inquiries or support related to the project.
+Email : [princepalknp0402@gmail.com](princepalknp0402@gmail.com)
+Twitter : [Prince Pal](https://twitter.com/princepaul_29_4)
 
 ## Screenshots
 
-Include screenshots or GIFs of the application to showcase its appearance or functionality.
+screenshots or GIFs of the application to showcase its appearance or functionality.
 
 ## Roadmap
 
-Outline the future enhancements or features planned for the project.
-
-## How to Run
-
-Provide instructions on how to run or access the project, if applicable.
+the future enhancements or features planned for the project.
 
 ## Support
 
-Offer support information or resources for users who might encounter issues.
+support information or resources for users who might encounter issues.
 
 ---
 
 ### Folder Structure
 
-Explain the project's folder structure briefly, especially if there are specific conventions.
+the project's folder structure briefly, especially if there are specific conventions.
 
 ---
 
 ### Authors
 
-- [Your Name](link to your GitHub or website)
+- [Prince Pal](https://www.linkedin.com/in/theprince29/)
 
 ---
 
