@@ -14,6 +14,14 @@ List the key features of the Helpdesk application or what users can do with it.
 - Feature 2
 - ...
 
+## Document Details
+
+- **Subject:** [Subject Name]
+- **Code:** [Course Code]
+- **Semester:** [Semester Information]
+- **Teacher:** [Teacher's Name]
+- **Description:** Include a brief description or abstract of the document here.
+
 ## Technologies Used
 
 - HTML5
