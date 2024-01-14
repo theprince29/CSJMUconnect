@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{username}} | Uploads</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Open Sans Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/dstyles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">account_circle</span> {{username}}
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <a href="/" style="text-decoration: none;">
+                <div class="sidebar-brand">
+                   CSJMUconnect
+                </div>
+                </a> 
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="/auth/dashbord">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/auth/dashbord/profile">
+                        <span class="material-icons-outlined">account_circle</span> Profile
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/auth/dashbord/upload">
+                        <span class="material-icons-outlined">upload</span> Uploads
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/blogs">
+                        <span class="material-icons-outlined">create</span> Blog Post
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/contributor">
+                        <span class="material-icons-outlined">leaderboard</span> Leaderboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/community">
+                        <span class="material-icons-outlined">forum</span> Community
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/resources">
+                        <span class="material-icons-outlined">book</span> Resources
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">settings</span> Settings
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/logout">
+                        <span class="material-icons-outlined">logout</span> logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+
+        <main class="main-container bg-imreglog">
+            <div class="main-title">
+                <h2>UPLOADS</h2>
+            </div>
+            <main class="profile-container">
+                
+                <section class="uploads-section">
+                    <div class="flex justify-content-center">
+                        <h1>Upload Your File</h1>
+                    </div>
+
+                    <form action="/auth/dashbord/upload" method="post" enctype="multipart/form-data">
+                        <div class="form-group mt-2">
+                            <label for="dept">Department:</label>
+                            <input type="Text" class="form-control" placeholder="Depratment of content" id="dept"
+                                name="dept" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="branch">Branch:</label>
+                            <input type="text" class="form-control" placeholder="branch of content" id="branch"
+                                name="branch" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="subjectCode">Subject Code:</label>
+                            <input type="text" class="form-control" placeholder="eg. CSE-S101" id="subjectCode"
+                                name="subjectCode" required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="semester">Semester:</label>
+                            <input type="text" class="form-control" id="semester" placeholder="eg. III" name="semester"
+                                required>
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="pdfUpload">Upload PDF:</label>
+                            <input type="file" class="form-control-file" id="pdfUpload" name="pdfUpload" accept=".pdf"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    <!-- Additional content related to uploads -->
+                </section>
+
+            </main>
+
+
+
+
+
+        </main>
+
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Custom JS -->
+    <script src="/js/dscripts.js"></script>
+    <script>
+           document.addEventListener('DOMContentLoaded', function () {
+                const successMessage = "{{ successMessage }}";
+                if (successMessage) {
+                    alert(successMessage);
+                }
+            });
+    </script>
+</body>
+
+</html>

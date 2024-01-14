@@ -23,5 +23,8 @@ router.get('/secrets',(req,res)=>{
 router.get('/contributor',(req,res)=>{
     res.render("contirbutor");
 });
+router.get('/dashboard',(req,res)=>{
+    res.render("dashboard");
+});
 
 module.exports = router;
