@@ -5,3 +5,4 @@ dist/
 coverage/
 *.js.map
 !src/*.spec.ts
+.env

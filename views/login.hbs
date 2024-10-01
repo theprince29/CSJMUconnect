@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Helpdesk</title>
+    <title>Login | CSJMUconnect</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap Icons-->
@@ -68,9 +68,12 @@
                     <a href="/auth/dashbord"><button type="button" class="btn btn-primary mt-2">Dashboard</button></a>
                     {{else}}
                     <button type="submit" class="btn btn-primary mt-2">Sign in</button>
+
                     <br>
                     <div class="mt-2 float-left">
-                        <a class="text-decoration-none" href="/register">I don't have an account!</a>
+                        <a class="text-decoration-none" style="color: rgb(32, 19, 216);"  href="/register">I don't have an account!</a>
+                        <br>
+                        <a class="text-decoration-none " style= "color: rgb(32, 19, 216);" href="/auth/forgot-password">forgot-password</a>
                     </div>
                     {{/if}}
                 </form>

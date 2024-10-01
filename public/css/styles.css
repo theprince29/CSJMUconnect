@@ -8196,7 +8196,7 @@ textarea.form-control-lg {
 }
 
 .bg-gradient {
-  background-image: var(--bs-gradient) !important;
+  background-image: var(--bs-gradient) !important ;
 }
 
 .user-select-all {
@@ -10859,7 +10859,7 @@ hr.divider-light {
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand ,#mainNav1{
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
@@ -10917,17 +10917,49 @@ hr.divider-light {
 }
 
 header.masthead {
+  position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.7) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  overflow: hidden;
 }
+/* video css */
+#video-background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it behind the content */
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 2s; /* Add a transition effect for opacity change */
+}
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style for the background image */
+.background-image {
+  background: url('../assets/img/bg-masthead.jpg') center center / cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -11078,4 +11110,20 @@ cursor: pointer;
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
+}
+
+
+
+.bg-imreglog {
+  /* Specify the URL to your image */
+  background-image: url('../assets/img/bg-reg.png');
+  /* Set background size and other properties as needed */
+  background-size: cover;
+  background-position: center;
+
+  
+  padding-bottom: calc(10rem - 4.5rem);
+  background-repeat: no-repeat;
+  /* Specify height or dimensions for the element */
+  height: 100vh;
 }
